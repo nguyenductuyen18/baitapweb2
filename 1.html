@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+        .chinh td {
+            width: 50px;
+        }
+        #other:checked ~ #message {
+            display: inline;
+        }
+
+        #message {
+            display: none;
+        }
+            </style>
+</head>
+<body>
+    <form>
+    <h1>Market Research Survey</h1>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <b>What is your age range?</b><br>
+        <select name="year">
+             <option value="age">18-24</option>
+             <option value="age">25-34</option>
+             <option value="age">35-50</option>
+             <option value="age">50+</option>
+         </select><br>
+    <br>
+    <b>What is your yearly income range?</b><br>
+        <select name="Dolla">
+             <option value="0">$0 - $25,000</option>
+             <option value="25">$25,001 - $50,000</option>
+             <option value="50">$50,001 - $100,000</option>
+             <option value="100">$100,000</option><
+        </select><br>
+    <br>
+    <b>Gender Identity</b><br/>
+             <input type="Radio" name="sex" value="Male">Male<br/>
+             <input type="Radio" name="sex" value="Female">Female<br/>
+             <input type="Radio" name="sex" value="Nonbinary">Nonbinary<br/>
+             <input type="Radio" name="sex" value="Other" id="other">Other<br/>
+                   <input type="text" name="text here"><br>
+                <span id="message">Message abcd</span>
+    <br>
+    <b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b><br>
+            <input type="Checkbox">Product 1<br>
+            <input type="Checkbox">Product 2<br>
+            <input type="Checkbox">Product 3<br>
+    <br>
+    <b>How often would you use our new product?</b><br>
+            <input type="Radio" name="product" value="1">Daily<br/>
+            <input type="Radio" name="product" value="2">Weekly<br/>
+            <input type="Radio" name="product" value="3">Monthly<br/> 
+    <br>
+    <b>What would you pay for the new product?</b><br>
+    $ <input type="text" name="Text here" style="height:20px;">. <input type="text" style="height: 20px;width:20px;;"><br>
+    <br>
+    <b>What features would you lile to see in the procut</b><br>
+            <textarea cols="50" rows="10"></textarea>
+    <p>Please rate your level of agreement with the following statements</p>
+    <table>
+        <tr>
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr class="chinh">
+            <b><td>Our products are priced fairly</td></b>
+            <td><input type="radio" name="fairly" ><br/>1</td>
+            <td><input type="radio" name="fairly" ><br>2</td>
+            <td><input type="radio" name="fairly" ><br>3</td>
+            <td><input type="radio" name="fairly" ><br>4</td>
+        </tr>
+        <tr class="chinh">
+            <b><td>Our products are high quality</td></b>
+            <td><input type="radio" name="quality" ><br>1</td>
+            <td><input type="radio" name="quality" ><br>2</td>
+            <td><input type="radio" name="quality" ><br>3</td>
+            <td><input type="radio" name="quality" ><br>4</td>
+        </tr>
+        <tr>
+            <td>You would recommend our product to a friend or coworker</td>
+            <td><input type="radio" name="coworker" ><br>1</td>
+            <td><input type="radio" name="coworker" ><br>2</td>
+            <td><input type="radio" name="coworker" ><br>3</td>
+            <td><input type="radio" name="coworker" ><br>4</td>
+        </tr>
+    </table>
+    <input type="button" name="Submit" value="Submit">
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ĐĂNG KÍ HỌC VIÊN</h2>
+    <form>
+        Họ và tên <input type="text" name="yourname"><br/>
+        Ngày sinh <input type="datetime" name="birthday"><br/>
+        Giới tính <input type="radio" name="sex" value="female">Nam
+                  <input type="radio" name="sex" value="male">Nữ
+        <br/>Địa chỉ <input type="text" name="Where" style="height: 100px; width: 200px;" >
+        <br/>Lớp <select name="Chọn lớp">
+                      <option value="0">-Chọn lớp-</option>
+                      <option value="1">IBSK1D2</option>
+                      <option value="2">IBSK1D1</option>
+                 </select>
+        <br/>
+        Email <input type="email" name="email"><br/>
+        Điện thoại <input type="text" name="sodt"><br/>
+        <input type="submit" value="Đăng kí">
+        <input type="Reset" value="Nhập lại">
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>SỞ THÍCH CỦA BẠN</p>
+   <form>
+       Họ và tên:<input name="yourname" type="text" ></br> 
+           Email:<input type="text" name="email"></br>
+       Sở thích 
+       <input type="checkbox" name="hobby" >   Thể thao <input type="checkbox" name="hobby">Âm nhạc   <input type="checkbox" name="hobby">   Đọc sách<br/>
+       <input type="checkbox" name="hobby" >   Lướt web <input type="checkbox" name="hobby">Chơi game   <input type="checkbox" name="hobby">   Điện ảnh<br/>
+       <input type="checkbox" name="hobby" >Du lịch<br/>
+       <input type="submit" value="Gửi thông tin">
+       <input type="reset" value="Nhập lại">
+   </form> 
+</body>
